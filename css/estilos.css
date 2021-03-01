@@ -141,6 +141,10 @@ nav .lista li:hover > .dropdown-menu {
 .multimedia {
   margin: 2rem 0; }
 
+/*MENU DE PORTADA*/
+.portada {
+  width: 150%; }
+
 /* MENU DE CUIDADOS*/
 h2 {
   font-style: inherit;
