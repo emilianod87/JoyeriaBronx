@@ -5,7 +5,7 @@
   padding: 1rem;
   font-size: large;
   list-style: circle;
-  font-weight: bold; }
+  font-weight: lighter; }
 
 * {
   margin: 0;
@@ -162,8 +162,8 @@ h2 {
 .quienes {
   font-family: "Yusei Magic", sans-serif;
   padding: 1rem;
-  margin-bottom: 50rem;
-  margin-top: 10rem; }
+  margin-bottom: 35rem;
+  margin-top: 5rem; }
   .quienes__parrafo {
     margin-bottom: 5px; }
   .quienes__parrafo--margen {
