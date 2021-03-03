@@ -177,7 +177,8 @@ nav .lista li:hover>.dropdown-menu {
 
 /*MENU DE PORTADA*/
 .portada {
-  width: 150%;
+  width: auto;
+  margin: 4.5rem;
 
 }
 
@@ -188,7 +189,7 @@ h2 {
   padding: 2rem;
   font-weight: bold;
   text-decoration: underline;
-  margin-bottom: 50rem;
+  margin-bottom: 10rem;
 }
 
 .cuidados {
