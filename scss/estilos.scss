@@ -2,139 +2,57 @@
 @import "_extend.scss";
 @import "_variables.scss";
 
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*ESTILOS GENERALES*/
-html {
-  font-size: 62, 5%;
-}
-
-.navbar {
-  font-family: 'Lobster', cursive;
-  font-size: 25px;
-  display: flex;
-}
-
 body {
-  background-color: $colorPrincipal;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: $colorPrincipal;
 }
 
-h1 {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 4rem;
-  letter-spacing: 0.3rem;
-  height: 27vh;
-  margin: 0px;
-  font-style: italic;
-}
-
-
-header {
+.header {
+  font-family: 'Lobster', cursive;
+  font-size: 18px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: $colorPrincipal;
-
 }
 
 .logo {
+  height: 60px;
   width: auto;
-  height: 145px;
   mix-blend-mode: multiply;
-  display: flex;
-  align-items: center;
 }
 
 .menu {
-  width: 100%;
-  background: lemonchiffon;
-
-  @include media(mobile) {
-    background-color: teal;
-  }
-
-}
-
-nav .lista {
-  display: flex;
-  justify-content: space-evenly;
   padding: 1rem 0;
-  list-style: none;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  width: min-content;
 
-  @include media(mobile) {
-    flex-direction: column;
-    align-items: center;
-    box-shadow: none;
-  }
-
-  li {
-    position: relative;
-
-    a {
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 1rem;
-      padding: 1rem;
-      color: $negro;
-
-      @include media(mobile) {
-        color: white;
-      }
-
-      &:hover {
-        color: teal;
-
-        @include media(mobile) {
-          color: lightblue;
-        }
-      }
-    }
+  @include media(tablet) {
+    width: 100%;
   }
 }
 
-nav .lista .dropdown-menu {
-  position: absolute;
-  z-index: 1000;
-  display: none;
-  margin-top: 1rem;
-  background-color: rgb(233, 220, 103);
-
-  li {
-    display: block;
-    padding: 0.3rem 0;
-
-    a {
-      color: $negro;
-
-      a:hover {
-        color: $coral;
-      }
-    }
-  }
+.navbar {
+  box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.1);
 }
 
-nav .lista li:hover>.dropdown-menu {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  list-style: square;
+.nav-link {
+  padding: 0;
 }
 
 .lista li:hover>.dropdown-menu {
   display: flex;
 }
 
-.pie__lista2 {
+.carousel-image {
+  object-fit: cover;
+  height: 100%;
+
+}
+
+.pie__lista {
   background-image: linear-gradient(to top, gray, black);
   color: white;
   font-weight: lighter;
@@ -145,8 +63,13 @@ nav .lista li:hover>.dropdown-menu {
   margin: 0.4rem;
   justify-content: space-around;
   border-radius: 10px;
-  font-family: 'Lobster', cursive;
-  font-size: 20px;
+  font-size: 18px;
+
+  @include media(tablet) {
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+  }
 }
 
 .aparte__presentacion {
@@ -177,9 +100,25 @@ nav .lista li:hover>.dropdown-menu {
 
 /*MENU DE PORTADA*/
 .portada {
-  width: auto;
-  margin: 4.5rem;
+  width: 100%;
+  height: 300px;
+  margin: 1rem 0;
 
+  & img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.productos {
+  margin: 1rem 0;
+
+  &__imagen {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 /* MENU DE CUIDADOS*/
@@ -189,24 +128,23 @@ h2 {
   padding: 2rem;
   font-weight: bold;
   text-decoration: underline;
-  margin-bottom: 10rem;
 }
 
 .cuidados {
-  font-size: larger;
-  line-height: 3rem;
-  list-style: circle;
-  padding: 1.5rem;
+  font-size: large;
   list-style-position: inside;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans",
+    "Gill Sans MT",
+    Calibri,
+    "Trebuchet MS",
+    sans-serif;
 }
 
 /*ESTILOS QUIENES SOMOS*/
 .quienes {
   font-family: "Yusei Magic", sans-serif;
   padding: 1rem;
-  margin-bottom: 35rem;
-  margin-top: 5rem;
+  margin: 1rem 0;
 
   &__parrafo {
     @extend %parrafo;
@@ -240,7 +178,7 @@ h2 {
 
 .row {
   justify-content: center;
-  margin-top: 5rem;
+  /*margin-top: 5rem;*/
 }
 
 /*ESTILOS DE PAGINAS*/
@@ -253,11 +191,11 @@ h2 {
     "Lucida Sans", Arial, sans-serif;
 }
 
-img {
+/* img {
   width: 60%;
   margin: 1.2rem;
   height: 50vh;
-}
+} */
 
 .caja-uno-ar {
   @extend %ancho;
@@ -284,11 +222,13 @@ img {
 @media screen and (max-width: 991px) {
 
 
-  .pie__lista2 {
-    flex-direction: column;
-    align-items: center;
-    font-size: 25px;
-  }
+  /*   img {
+    width: 100%;
+    margin: 1.2rem;
+    height: 50vh;
+    object-fit: cover;
+  } */
+
 
   .aparte__presentacion {
     display: none;
@@ -298,27 +238,7 @@ img {
     width: 100%;
   }
 
-  .navbar-nav {
-    font-size: 15px;
 
-
-  }
-
-  .navbar {
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    margin-left: 80%;
-    z-index: 1;
-  }
-
-  .nav-link.active {
-    margin: -5.5%;
-  }
 
   .articulos {
     display: flex;
