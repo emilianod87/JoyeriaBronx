@@ -47,17 +47,17 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="anillos.html">Anillos</a>
+                  <a class="dropdown-item" href="./anillos.html">Anillos</a>
                 </li>
-                <li><a class="dropdown-item" href="aros.html">Aros</a></li>
+                <li><a class="dropdown-item" href="./aros.html">Aros</a></li>
                 <li>
-                  <a class="dropdown-item" href="cadenas.html">Cadenas</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="pulseras.html">Pulseras</a>
+                  <a class="dropdown-item" href="./cadenas.html">Cadenas</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="relojes.html">Relojes</a>
+                  <a class="dropdown-item" href="./pulseras.html">Pulseras</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./relojes.html">Relojes</a>
                 </li>
               </ul>
             </li>
@@ -71,7 +71,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" href="contacto.html">Contacto</a>
+              <a class="nav-link active" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -80,8 +80,8 @@
   </header>
   ​
   <main class="container">
-    <!--MENU DE CARRUSEL-->
     ​
+    <!-- Carousel-->
     <section class="row">
       <div class="col-sm-12">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -143,36 +143,77 @@
         </ul>
       </div>
     </section>
-    ​
 
-    <!-- Productos -->
+    <!-- Contacto -->
+    <section class="contacto" id="contacto">
+      <h2>Contacto</h2>
 
-    <div class="productos row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-      <div class="col">
-        <div class="card shadow-sm">
-          <img class="productos__imagen card-img-top" src="imagenes/anillo1.jpeg" alt="anillo, cruz, acero, dedo" />
-
-          <div class="card-body">
-            <p class="card-text">
-              <h3>Anillo Cruz</h3>
-              <p>$290</p>
-            </p>
-          </div>
+      <div class="row">
+        <div class="col"><iframe class="ubicacion__mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.0010554622672!2d-57.54921708506785!3d-38.00043585252014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc1b5b6c2cb5%3A0xa37e2d2e98e74af9!2sRivadavia%202545%2C%20B7600%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1610141884684!5m2!1ses!2sar"
+            width="600" height="450" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe></div>
+        <div class="col">
+          <div class="form">
+          <form method="GEt">
+            <div class="form-group">
+              <legend class="text-center header">Envíanos tu consulta</legend>
+              ​
+              <div class="form-group">
+                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                <div>
+                  <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control" />
+                </div>
+              </div>
+              ​
+              <div class="form-group">
+                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                <div>
+                  <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control" />
+                </div>
+              </div>
+              ​
+              <div class="form-group">
+                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                <div>
+                  <input id="email" name="email" type="text" placeholder="Email" class="form-control" />
+                </div>
+              </div>
+              ​
+              <div class="form-group">
+                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                <div>
+                  <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control" />
+                </div>
+              </div>
+              ​
+              <div class="form-group">
+                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                <div>
+                  <textarea class="form-control" id="message" name="message"
+                    placeholder="Podes hacer tu consulta o pedido y nos ponemos en contacto a la brevedad !"
+                    rows="3"></textarea>
+                </div>
+              </div>
+              ​
+              <div class="form-group">
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="btn btn-dark btn-lg">
+                    Enviar
+                  </button>
+                </div>
+              </div>
+              ​
+            </div>
+          </form>
+       </div>
         </div>
       </div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-    </div>
   </main>
-  <!--MENU DE FOOTER-->
+
+  <!-- Footer -->
   <footer class="pie">
     <ul class="pie__lista">
       <li>Rivadavia 2545, Local 89, Galería Eves</li>

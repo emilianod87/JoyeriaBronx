@@ -119,6 +119,18 @@ body {
     width: 100%;
     object-fit: cover;
   }
+
+  &__imagen--alta {
+    height: 400px;
+    width: 100%;
+    object-fit: fill;
+  }
+
+  &__imagen--ancha {
+    height: auto;
+    width: 400px;
+    object-fit: cover;
+  }
 }
 
 /* MENU DE CUIDADOS*/
@@ -161,21 +173,6 @@ h2 {
 }
 
 
-
-
-/*ESTILOS FORMULARIO*/
-.col-md-7 {
-  padding: 0.5rem;
-  border: 2px solid $negro;
-  border-radius: 15px;
-  background-color: $colorPrincipal;
-
-}
-
-.form-control {
-  background-color: $negro;
-}
-
 .row {
   justify-content: center;
   /*margin-top: 5rem;*/
@@ -191,11 +188,11 @@ h2 {
     "Lucida Sans", Arial, sans-serif;
 }
 
-/* img {
-  width: 60%;
-  margin: 1.2rem;
-  height: 50vh;
-} */
+.form {
+  border: 2px solid $negro;
+  border-radius: 10px;
+  padding: 1rem;
+}
 
 .caja-uno-ar {
   @extend %ancho;
@@ -233,12 +230,6 @@ h2 {
   .aparte__presentacion {
     display: none;
   }
-
-  .container-form {
-    width: 100%;
-  }
-
-
 
   .articulos {
     display: flex;
