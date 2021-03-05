@@ -1,5 +1,10 @@
 {
     "editor.defaultFormatter": "HookyQR.beautify",
     "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "cSpell.words": [
+        "Bronx",
+        "Logo",
+        "bijouterie"
+    ]
 }
