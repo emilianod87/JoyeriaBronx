@@ -1,7 +1,7 @@
 {
   "name": "mipagina2",
   "version": "1.0.0",
-  "description": "mipagina",
+  "description": "Nuestro negocio, Bronx Accesorios, se dedica a la venta de todo tipo de bijou de acero quirúrgico de la mas alta calidad. Nuestro objetivo hoy es continuar en nuestra consolidada posición en tendencia de bijouterie, ofreciendo productos de alta calidad y gran precio.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

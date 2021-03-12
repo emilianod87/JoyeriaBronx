@@ -2,10 +2,15 @@
 @import "_extend.scss";
 @import "_variables.scss";
 
+/*MENU GENERAL*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.col-sm-12 {
+  margin-top: 4rem;
 }
 
 body {
@@ -19,7 +24,7 @@ body {
 }
 
 .logo {
-  height: 90px;
+  height: 80px;
   width: auto;
   mix-blend-mode: multiply;
 }
@@ -72,22 +77,7 @@ body {
   }
 }
 
-.aparte__presentacion {
-  padding: 0.4rem;
-  margin: 1rem;
-  height: 30vh;
-  border: 1px dashed $negro;
-  text-align: center;
-  font-size: 20px;
-  background-image: linear-gradient(to top, mintcream, $coral);
-  transform: rotate(10deg);
-  color: $negro;
-  font-family: "Redressed", cursive;
-  float: right;
-  transition: all 2s;
-  overflow: hidden;
-  position: relative;
-}
+
 
 .aparte__presentacion:hover {
   height: 20vh;
@@ -222,13 +212,6 @@ h2 {
 
 @media screen and (max-width: 991px) {
 
-
-  /*   img {
-    width: 100%;
-    margin: 1.2rem;
-    height: 50vh;
-    object-fit: cover;
-  } */
 
 
   .aparte__presentacion {
